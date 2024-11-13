@@ -24,4 +24,4 @@ jobs:
           sleep 30
       - name: Tests de charge
         run:
-          locust -H http://127.0.0.1:5000 -u 10000 -r 100 -t 2m
+          locust -H http://127.0.0.1:5000 -u 10000 -r 100 -t 2m --headless
